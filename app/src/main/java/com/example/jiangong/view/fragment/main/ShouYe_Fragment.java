@@ -106,7 +106,9 @@ public class ShouYe_Fragment extends Fragment implements BaseView {
     public void onResume() {
         super.onResume();
         Map<String, Object> map = new HashMap<>();
-        map.put("uid", Constans.guid);
+
+        //世纪东方减税降费是否家环境
+       map.put("uid", Constans.guid);
         map.put("subject_id", Constans.subject_id);
         presenter.kuFengMian(map);
     }
