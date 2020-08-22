@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.main.ShouYe_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/shy_title_linearlaout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/shy_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建筑工程经济"
+                android:textColor="@color/heisan"
+                android:textSize="24sp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/lujing"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离考试还有"
+                android:textColor="@color/heisan"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/shy_tianshu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:text="0"
+                android:textColor="@color/red_FF0000"
+                android:textSize="22sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天"
+                android:textColor="@color/heisan"
+                android:textSize="14sp"></TextView>
+        </LinearLayout>
+<!--进度-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/baiyuanjiaowubiankuang"
+            android:layout_margin="20dp">
+
+
+            <ProgressBar
+                android:id="@+id/shy_lianxi_progressbar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:max="100"
+                android:progress="40"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/zuo"
+                android:visibility="gone"></ImageView>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/you"></ImageView>
+        </LinearLayout>
+<!--功能模块-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/baiyuanjiaowubiankuang"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/shy_moni_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/monishijuan"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="模拟试卷"
+                        android:textColor="@color/heisan"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shy_cuoti_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/cuotishoucang"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="收藏错题"
+                        android:textColor="@color/heisan"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shy_kaodian_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/kaodianlianxi"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="考点练习"
+                        android:textColor="@color/heisan"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/shy_gaopin_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/gaopintiku"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="高频练习"
+                        android:textColor="@color/heisan"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shy_linian_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/linianzhenti"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="历年真题"
+                        android:textColor="@color/heisan"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shy_huiyuan_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/huiyuanyouxuan"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="会员优选"
+                        android:textColor="@color/heisan"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+<!-- 考点练习-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/juxing"
+                android:layout_gravity="center_vertical"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="章节练习"
+                android:textColor="@color/heisan"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/baiyuanjiaowubiankuang"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已练习"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/gary_light"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总题数"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/gary_light"></TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/shy_yilianxi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"
+                    android:textStyle="bold"
+                    android:textSize="34sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/heisan"></TextView>
+
+                <TextView
+                    android:id="@+id/shy_zongti_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9609道"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/heisan"></TextView>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/shy_jindutiao_progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/main_pb_bg"
+                android:secondaryProgress="70" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:id="@+id/shy_zuotizong_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="做题总数 1300 题"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/heisan"></TextView>
+
+                <TextView
+                    android:id="@+id/shy_zhengquelv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计正确率 80%"
+                    android:textSize="12sp"
+                    android:layout_marginRight="15dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/heisan"></TextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+<!--分享-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zuofenxiang"
+                android:layout_gravity="center_vertical"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/zuofenxiang"
+                android:text="分享"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"></TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/youfenxiang"
+                android:layout_gravity="center_vertical"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <LinearLayout
+                android:id="@+id/shy_wxhaoyou_linearlayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/weixin"
+                    android:layout_gravity="center_horizontal"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信好友"
+                    android:textColor="@color/heisan"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shy_wxpengyouquan_linearlayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pengyouquan"
+                    android:layout_gravity="center_horizontal"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="朋友圈"
+                    android:textColor="@color/heisan"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shy_qqhaoyou_linearlayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/qqhaoyou"
+                    android:layout_gravity="center_horizontal"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ好友"
+                    android:textColor="@color/heisan"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shy_qqkongjian_linearlayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/qqkongjian"
+                    android:layout_gravity="center_horizontal"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ空间"
+                    android:textColor="@color/heisan"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

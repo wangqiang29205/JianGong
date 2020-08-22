@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.WangJiZhangHao_Activity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/wjzhanghao_fanhui_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/loginfanhui"
+        android:padding="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="33dp"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/heisan"
+            android:text="忘记密码"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"></TextView>
+
+        <EditText
+            android:id="@+id/wjzhanghao_shoujihao_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_marginTop="30dp"
+            android:hint="请输入手机号"></EditText>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/chaoqianhui"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+            <EditText
+                android:id="@+id/wjzhanghao_yanzhengma_edittext"
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="请输入验证码"></EditText>
+
+            <TextView
+                android:id="@+id/wjzhanghao_huoqu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取"
+                android:textColor="@color/zhutihuang"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"></TextView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/chaoqianhui"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp">
+
+            <EditText
+                android:id="@+id/wjzhanghao_mima_edittext"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="9"
+                android:background="@null"
+                android:hint="请输入密码"></EditText>
+
+            <ImageView
+                android:id="@+id/wjzhanghao_kejian_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/yincangmima"
+                android:layout_gravity="center_vertical"></ImageView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/chaoqianhui"></View>
+
+        <Button
+            android:id="@+id/wjzhanghao_tijiao_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/zhutichengyuanjiaowubiankuang"
+            android:layout_marginTop="35dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="16sp"></Button>
+    </LinearLayout>
+
+</LinearLayout>

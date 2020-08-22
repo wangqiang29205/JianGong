@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.KaoShiType_Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择要考试的科目"
+        android:textColor="@color/heisan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="15dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <q.rorbin.verticaltablayout.VerticalTabLayout
+            android:id="@+id/kstype_title_tablayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:indicator_color="@color/zhutihuang"
+            app:tab_mode="scrollable"
+            app:tab_margin="30dp"
+            app:tab_height="30dp"
+            app:indicator_gravity="right">
+        </q.rorbin.verticaltablayout.VerticalTabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/kstype_view_viewpager"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"></androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

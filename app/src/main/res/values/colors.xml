@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="qanhui">#BBBBBB</color>
+    <color name="text">#000000</color>
+    <color name="app_color_f6">#f6f6f6</color>
+    <color name="heisan">#333333</color>
+    <color name="text1">#949494</color>
+    <color name="chaoqianhui">#F6F7F8</color>
+    <color name="qianhei">#999999</color>
+    <color name="naisi">#666666</color>
+    <color name="chaoqianlan">#F5FAFD</color>
+    <color name="zongse">#884E00</color>
+    <color name="color_7f000000">#3f000000</color>
+    <color name="text2">#404040</color>
+    <color name="blue_37A0FC">#37A0FC</color>
+    <color name="lanse">#37A0FC</color>
+    <color name="qianlan">#F5FAFF</color>
+    <color name="divider_color">#e6e6e6</color>
+    <color name="color_E7E7E7">#E7E7E7</color>
+    <color name="transparent_search_bg">#99F1F1F1</color>
+    <color name="search_text">#91969A</color>
+    <color name="grey_F1F1F1">#F1F1F1</color>
+    <color name="orange_FF7C00">#FF7C00</color>
+    <color name="blue_FF7C00">#8DCFFF</color>
+    <color name="divider_F5F5F5">#F5F5F5</color>
+    <color name="color_F0F0F2">#F0F0F2</color>
+    <color name="green_35FF35">#35FF35</color>
+    <color name="red_FF0000">#FF0000</color>
+    <color name="hongse">#FF0A0A</color>
+    <color name="hongse2">#FF1717</color>
+    <color name="orange_FFAD25">#FFAD25</color>
+    <color name="juhuang">#FF9300</color>
+    <color name="zhutihuang">#FF7321</color>
+    <color name="weixuanzhong">#DDDDDD</color>
+
+    <color name="shihuangse">#FFC400</color>
+    <color name="qianzhutise">#FFEFCC</color>
+
+    <color name="grey_F3F4F6">#F3F4F6</color>
+    <color name="purple_5D6B92">#5D6B92</color>
+    <color name="split">#FAFAFA</color>
+    <color name="btn_bg">#EEEEEE</color>
+    <color name="grey_9F9F9F">#9F9F9F</color>
+    <color name="orange_FF7A3F">#FF7A3F</color>
+    <color name="grey_F2F2F2">#F2F2F2</color>
+    <color name="bg_F9FAFC">#F9FAFC</color>
+
+
+    <color name="doodsdetails_bg">#FCFAFF</color>
+    <color name="refund_bg">#F1EFFF</color>
+    <color name="score_bg">#F1F0FF</color>
+    <color name="sc_transparent_background">#00111111</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="red_FCF2F0">#FCF2F0</color>
+
+    <color name="red_FE8B78">#FE8B78</color>
+    <color name="orange_FF7F00">#FF7F00</color>
+    <color name="blue_38A0FF">#38A0FF</color>
+
+    <color name="search_bg">#F1F1F1</color>
+    <color name="gary_light">#999999</color>
+    <color name="gary_C9C9C9">#C9C9C9</color>
+
+    <color name="title_text">#F4A725</color>
+
+    <color name="color_FF931A">#FF931A</color>
+    <color name="color_CECECE">#CECECE</color>
+    <color name="red_F64C32">#F64C32</color>
+
+    <color name="miaosha_text">#8578FF</color>
+    <color name="green_70C284">#70C284</color>
+</resources>
